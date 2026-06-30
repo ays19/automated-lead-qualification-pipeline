@@ -1,0 +1,8 @@
+- When building or modifying long-running API endpoints (like `/api/pipeline/run`), use Server-Sent Events (SSE) instead of accumulating logs and returning them at the end. This ensures the frontend receives live updates.
+- Always preserve the `pipelineRunning` guard to prevent concurrent execution of the pipeline.
+- Ensure modals are centered with a backdrop overlay, and clicking outside the modal closes it. Keep read and edit view dimensions consistent in modals.
+- When rendering long text inside table cells, use inline expand/collapse with a toggle icon (like ChevronDown) rather than modals or tooltips.
+- Always provide clear visual feedback (e.g., warning banners, pulsing action buttons) when configuration inputs are modified, indicating that current results are stale and a re-run is required.
+- When exporting tabular data to spreadsheets that require complex formatting (colors, dropdowns, frozen rows), use backend libraries like `exceljs` instead of browser-side CSV blobs.
+- Stat labels should accurately reflect the specific data they represent (e.g., 'Exported for Outreach' instead of generic terms like 'Completed').
+- Terminal and log viewers should feature realistic, command-line styled placeholders with blinking cursors when idle to match the developer-tool aesthetic.

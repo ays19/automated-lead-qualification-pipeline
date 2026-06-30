@@ -1,0 +1,6 @@
+{
+  "name": "Automated Lead Qualification Pipeline",
+  "description": "An automated pipeline to extract, score, and qualify LinkedIn leads based on an Ideal Candidate Profile, generating tailored cold outreach and exporting to Excel-compatible formats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
