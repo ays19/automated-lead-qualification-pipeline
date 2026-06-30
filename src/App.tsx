@@ -737,7 +737,7 @@ export default function App() {
               </span>
             </h1>
             <p className="text-[11px] text-slate-400 mt-1.5 font-mono">
-              IN_DATA: input_leads.csv // OUT_LOGS: output_leads.csv // DECISION_ENGINE: AI_HEURISTICS
+              IN_DATA: input_leads.csv // OUT_LOGS: output_leads.csv // DECISION_ENGINE: {mode === "ai" ? "GROQ_AI" : "HEURISTICS"}
             </p>
           </div>
 
